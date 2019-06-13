@@ -230,8 +230,6 @@ $('.toggle_speed').on('click', function() {
 
 });
 
-
-
 $('.mais_ben_btn').on('click', function() {
   $(this).parent().find('.toggle_last').toggleClass('last');
   $(this).parent().find('.ver_mais').toggleClass('none');
@@ -249,7 +247,7 @@ $('form[name="wf-form-Formulario-DDD"]').submit(function(event) {
   return false;
 });
 
-$(document).on('click', '.fechar-modal-ddd', function(event) {
+$(document).on('click', '.fechar-modal-ddd, .ghost_ddd', function(event) {
   if (checa_cookie_ddd() == false) {
     get_precos(21, 'RJ', null);
   }
